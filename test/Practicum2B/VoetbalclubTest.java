@@ -77,6 +77,5 @@ class VoetbalclubTest {
         feij.verwerkResultaat('w');
         feij.verwerkResultaat('w');
         assertEquals("Feijenoord 8 3 3 2 12",feij.toString(),"punten worden niet goed in de toString gezet");
-
     }
 }
