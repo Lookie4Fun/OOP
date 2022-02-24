@@ -1,0 +1,9 @@
+voor het testen:
+ik denk als je de try-catch weg haald dat de code stopt bij het maken van cirkel c2
+omdat hij bij de if statement in klasse cirkel niet de illegalargumentexception kan gooien.
+
+
+na het testen:
+de illegalagrumentexception komt nogsteeds in de terminal te staan maar de code 
+kan niet verder uitgevoerd worden omdat hij de illegalagrumentexception wel gooid
+maar die word niet gevangen, hierdoor loppt hij vast.
