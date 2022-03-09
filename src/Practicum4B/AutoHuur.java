@@ -45,14 +45,14 @@ public class AutoHuur {
 
 
     public String toString() {
-        String out = "    autotype: " + gehuurdeAuto;
+        String out = "autotype: " + gehuurdeAuto;
         if (gehuurdeAuto == null)
-            out = "     er is geen auto bekend";
+            out = "er is geen auto bekend";
         if (huurder != null)
             out = out + "\n" + huurder;
         else
-            out = out + "\n     er is geen huurder bekend";
-        out = out + "\n    aantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
+            out = out + "\ner is geen huurder bekend";
+        out = out + "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
         return out;
     }
 }

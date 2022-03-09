@@ -44,8 +44,4 @@ public class Persoon {
         }
         return b + "\n";
     }
-
-
-
-
 }
