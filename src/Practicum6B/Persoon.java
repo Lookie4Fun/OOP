@@ -42,10 +42,10 @@ public class Persoon {
         return d;
     }
 
-    public Game zoekGameOpNaam(String game) {
+    public Game zoekGameOpNaam(String naam) {
         Game r = null;
         for(Game g : Games){
-            if(g.equals(game)){
+            if(g.getnaam().equals(naam)){
                 r = g;
             }
         }

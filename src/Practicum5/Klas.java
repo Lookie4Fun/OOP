@@ -19,6 +19,7 @@ public class Klas {
         for(Leerling l: Leerlingen){
             if(nm.equals(l.getNaam())){
                 l.setCijfer(nweCijfer);
+                break;
             }
         }
     }
