@@ -1,12 +1,19 @@
 package Practicum2B;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class VoetbalclubTest {
-    Voetbalclub fc = new Voetbalclub(" ");
-    Voetbalclub feij = new Voetbalclub("Feijenoord");
+    private Voetbalclub fc;
+    private Voetbalclub feij;
+    @BeforeEach
+
+    public void init() {
+         fc = new Voetbalclub(" ");
+         feij = new Voetbalclub("Feijenoord");
+    }
     @Test
     void testLegeNaamWordtFC() {
         assertEquals("FC 0 0 0 0 0", fc.toString(), "Naam word niet automatisch veranderd naar FC");
