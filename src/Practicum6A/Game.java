@@ -31,15 +31,17 @@ public class Game {
         boolean d = false;
         if (andereObject instanceof Game) {
             Game b = (Game) andereObject;
-            if (b.getnaam().equals(this.naam) && b.releasejaar == this.releasejaar && b.niewprijs == this.niewprijs) {
+            if (b.getnaam().equals(this.naam) && b.releasejaar == this.releasejaar) {
                 d = true;
             }
         }
+        System.out.println(d);
         return d;
     }
 
     public String toString(){
-        return "\n" + naam + ", uitgegeven in "+ releasejaar+ "; "+ "nieuwprijs: €"+ niewprijs+ " nu voor: €"+ String.format("%.2f",huidigeWaarde()) ;
+
+        return naam + ", uitgegeven in "+ releasejaar+ "; "+ "nieuwprijs: €"+ String.format("%.2f",niewprijs)+ " nu voor: €"+ String.format("%.2f",huidigeWaarde()) ;
     }
 
 }

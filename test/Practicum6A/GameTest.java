@@ -1,4 +1,6 @@
-package Practicum6B;
+package Practicum6A;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -80,6 +82,8 @@ class GameTest {
     @Test
     public void testGameEqualsGameAndereNwPrijs() {
         Game duurdereGame1JrOud = new Game("Mario Kart", ditJaar-1, 59.95);
+        System.out.println(duurdereGame1JrOud);
+        System.out.println(game1JrOud);
         assertTrue(game1JrOud.equals(duurdereGame1JrOud), "equals() geeft false bij vgl. met zelfde game met andere nieuwprijs");
     }
 
