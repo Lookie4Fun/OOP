@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practicum9B.hotel.userinterface.BoekingenController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutY="333.0" prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="resetButton" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" text="Reset" />
+            <Button fx:id="boekButton" alignment="CENTER" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#voegBoekingToe" text="Boek">
+               <HBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_LEFT" layoutX="57.0" prefHeight="329.0" prefWidth="142.0" spacing="30.0">
+         <children>
+            <Label text="Voer uw gegevens in!" />
+            <Label text="Naam:" />
+            <Label text="Adres:" />
+            <Label text="Aankomstdatum:" />
+            <Label text="Vertrekdatum:" />
+            <Label text="Kamertype:" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="169.0" layoutY="75.0" prefHeight="235.0" prefWidth="389.0" spacing="25.0">
+         <children>
+            <TextField id="naamVeld" fx:id="naamVeld" maxWidth="300.0" minWidth="350.0" onAction="#getNaam" />
+            <TextField id="adresVeld" fx:id="AdresVeld" maxWidth="300.0" minWidth="350.0" onAction="#getAdres" prefHeight="25.0" prefWidth="300.0" />
+            <DatePicker id="aankomstdatumVeld" fx:id="aankkomstdatumVeld" minWidth="350.0" onAction="#getAankomstdatum" prefHeight="25.0" prefWidth="300.0" />
+            <DatePicker id="vertrekdatumVeld" fx:id="vertrekdatumVeld" minWidth="350.0" onAction="#getVertrekdatum" prefHeight="25.0" prefWidth="300.0" />
+            <ComboBox id="kamertypeVeld" fx:id="kamertypeVeld" minWidth="350.0" onAction="#zoekBeschikbareKamer" prefWidth="300.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
