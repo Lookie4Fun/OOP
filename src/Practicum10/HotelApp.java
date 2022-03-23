@@ -1,8 +1,8 @@
-package Practicum9B.hotel;
+package Practicum10;
 
-import Practicum9B.hotel.model.Hotel;
-import Practicum9B.hotel.model.Kamer;
-import Practicum9B.hotel.model.KamerType;
+import Practicum10.model.Hotel;
+import Practicum10.model.Kamer;
+import Practicum10.model.KamerType;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -1,4 +1,4 @@
-package Practicum9B.hotel.model;
+package Practicum10.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

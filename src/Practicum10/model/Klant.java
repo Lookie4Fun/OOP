@@ -1,4 +1,4 @@
-package Practicum9B.hotel.model;
+package Practicum10.model;
 
 public class Klant {
 	private String naam;

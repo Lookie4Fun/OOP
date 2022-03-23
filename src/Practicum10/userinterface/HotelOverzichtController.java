@@ -1,6 +1,6 @@
-package Practicum9B.hotel.userinterface;
+package Practicum10.userinterface;
 
-import Practicum9B.hotel.model.Hotel;
+import Practicum10.model.Hotel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practicum9B.hotel.userinterface.BoekingenController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practicum10.userinterface.BoekingenController">
    <children>
       <HBox alignment="CENTER_RIGHT" layoutY="333.0" prefHeight="67.0" prefWidth="600.0">
          <children>
@@ -28,11 +28,11 @@
       </VBox>
       <VBox alignment="CENTER" layoutX="169.0" layoutY="75.0" prefHeight="235.0" prefWidth="389.0" spacing="25.0">
          <children>
-            <TextField id="naamVeld" fx:id="naamVeld" maxWidth="300.0" minWidth="350.0" onAction="#getNaam" />
-            <TextField id="adresVeld" fx:id="AdresVeld" maxWidth="300.0" minWidth="350.0" onAction="#getAdres" prefHeight="25.0" prefWidth="300.0" />
-            <DatePicker id="aankomstdatumVeld" fx:id="aankkomstdatumVeld" minWidth="350.0" onAction="#getAankomstdatum" prefHeight="25.0" prefWidth="300.0" />
-            <DatePicker id="vertrekdatumVeld" fx:id="vertrekdatumVeld" minWidth="350.0" onAction="#getVertrekdatum" prefHeight="25.0" prefWidth="300.0" />
-            <ComboBox id="kamertypeVeld" fx:id="kamertypeVeld" minWidth="350.0" onAction="#zoekBeschikbareKamer" prefWidth="300.0" />
+            <TextField id="naamVeld" fx:id="naamVeld" maxWidth="300.0" minWidth="350.0" onAction="#geefNaamIn" />
+            <TextField id="adresVeld" fx:id="AdresVeld" maxWidth="300.0" minWidth="350.0" onAction="#geefAdresIn" prefHeight="25.0" prefWidth="300.0" />
+            <DatePicker id="aankomstdatumVeld" fx:id="aankkomstdatumVeld" minWidth="350.0" onAction="#geefAankomstdatum" prefHeight="25.0" prefWidth="300.0" />
+            <DatePicker id="vertrekdatumVeld" fx:id="vertrekdatumVeld" minWidth="350.0" onAction="#geefVertrekdatum" prefHeight="25.0" prefWidth="300.0" />
+            <ComboBox id="kamertypeVeld" fx:id="kamertypeVeld" minWidth="350.0" onAction="#toonKameTypes" prefWidth="300.0" />
          </children>
       </VBox>
    </children>
