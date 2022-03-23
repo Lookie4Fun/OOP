@@ -23,7 +23,7 @@ public class BedrijfsInventaris {
     }
 
     public String toString(){
-        String b = bedrijfsnaam + " heeft een budget van €" + String.format("%.2f", budget) + " en heeft de volgende goederen in het inventaris:";
+        String b = bedrijfsnaam + " heeft een budget van €" + Utils.euroBedrag(budget,2) + " en heeft de volgende goederen in het inventaris:";
         for(Goed g : alleGoederen){
             b=b+"\n"+g;
         }

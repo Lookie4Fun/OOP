@@ -38,6 +38,6 @@ public class Computer implements Goed{
     }
 
     public String toString(){
-        return "Computer: "+type+" met productieJaar "+productieJaar+" heeft een waarde van: €"+huidigeWaarde();
+        return "Computer: "+type+" met productieJaar "+productieJaar+" heeft een waarde van: €"+Utils.euroBedrag(huidigeWaarde(),2);
     }
 }

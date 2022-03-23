@@ -1,4 +1,4 @@
-package Practicum9A;
+package Practicum8;
 
 public class Utils {
     public static String euroBedrag(double bedrag){
