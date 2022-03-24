@@ -8,7 +8,7 @@
    <children>
       <HBox alignment="CENTER_RIGHT" layoutY="333.0" prefHeight="67.0" prefWidth="600.0">
          <children>
-            <Button fx:id="resetButton" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" text="Reset" />
+            <Button fx:id="resetButton" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#resetAlleVelden" text="Reset" />
             <Button fx:id="boekButton" alignment="CENTER" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#voegBoekingToe" text="Boek">
                <HBox.margin>
                   <Insets left="20.0" right="30.0" />
@@ -32,8 +32,9 @@
             <TextField id="adresVeld" fx:id="AdresVeld" maxWidth="300.0" minWidth="350.0" onAction="#geefAdresIn" prefHeight="25.0" prefWidth="300.0" />
             <DatePicker id="aankomstdatumVeld" fx:id="aankkomstdatumVeld" minWidth="350.0" onAction="#geefAankomstdatum" prefHeight="25.0" prefWidth="300.0" />
             <DatePicker id="vertrekdatumVeld" fx:id="vertrekdatumVeld" minWidth="350.0" onAction="#geefVertrekdatum" prefHeight="25.0" prefWidth="300.0" />
-            <ComboBox id="kamertypeVeld" fx:id="kamertypeVeld" minWidth="350.0" onAction="#toonKameTypes" prefWidth="300.0" />
+            <ComboBox id="kamertypeVeld" fx:id="kamertypeVeld" minWidth="350.0" onAction="#kamertypeCombobox" prefWidth="300.0" />
          </children>
       </VBox>
+      <Label fx:id="errorVeld" layoutX="344.0" layoutY="321.0" prefHeight="17.0" prefWidth="185.0" text="Niet alle gegevens zijn ingevoerd!" textFill="RED" visible="false" />
    </children>
 </AnchorPane>
